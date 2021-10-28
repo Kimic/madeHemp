@@ -3,9 +3,9 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname+'/dist/made-hemp'));
+app.use(express.static(__dirname+'/dist/madeHemp'));
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/dist/made-hemp/index.html'));
+    res.sendFile(path.join(__dirname+'/dist/madeHemp/index.html'));
 });
 
 app.listen(process.env.PORT || 5000);
